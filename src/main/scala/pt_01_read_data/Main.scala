@@ -1,5 +1,5 @@
 package com.oguzerdogan.sparkscala
-package read_data
+package pt_01_read_data
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.col
