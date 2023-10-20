@@ -2,6 +2,7 @@ package com.oguzerdogan.sparkscala
 package read_data
 
 import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions.col
 
 object Main {
   def main(args: Array[String]): Unit = {
@@ -17,5 +18,7 @@ object Main {
       .csv("data/AAPL.csv")
 
     df.show()
+    df.printSchema()
+
   }
 }
