@@ -22,8 +22,8 @@ object Main {
 
 
     val column = df("Open")
-    val newColumn = column + 2.0
-    val columnString = column.cast(StringType)
+    val newColumn = (column + 2.0).as("OpenIncreasedBy2") // Alias column, we can still use variable name
+    val columnString = column.cast(StringType).as("OpenAsString") // Alias column, we can still use variable name
 
     df.select(column, newColumn, columnString)
       .filter(newColumn > 2.0)
