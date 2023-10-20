@@ -1,5 +1,5 @@
 package com.oguzerdogan.sparkscala
-package referencing_columns
+package pt_02_referencing_columns
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.col
