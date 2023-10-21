@@ -15,6 +15,7 @@ object Main {
     // Read Data
     val df = spark.read
       .option("header", value=true)
+      .option("inferSchema", value=true)
       .csv("data/AAPL.csv")
 
     df.show()
